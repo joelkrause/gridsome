@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container">
-      <h1>Posts</h1>
+      <h3>Posts</h3>
       <Post v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>

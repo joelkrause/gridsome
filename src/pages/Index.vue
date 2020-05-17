@@ -3,7 +3,7 @@
     <div class="hero home_hero pt-5 pb-20 mb-10 bg-subtle">
       <div class="container grid grid-cols-12 gap-5">
         <div class="col-span-4">
-          <img src="/joel.png"/>
+          <g-image src="/joel.png"/>
         </div>
         <div class="col-span-7 col-start-6 flex items-center">
           <div class="content">
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="container">
-      <h1>Latest Posts</h1>
+      <h3>Latest Posts</h3>
       <Post v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
