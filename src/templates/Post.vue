@@ -1,10 +1,14 @@
 <template>
   <Layout>
+    <div class="post_hero bg-subtle py-20 mb-10">
+      <div class="container">
+        <p>{{$page.post.date}}</p>
+        <h1>{{ $page.post.title }}</h1>
+        <p>{{ $page.post.description }}</p>
+      </div>
+    </div>
     <div class="container">
-    <h1>{{ $page.post.title }}</h1>
-    <p>{{$page.post.date}}</p>
-    <p>{{ $page.post.description }}</p>
-    <div class="post__content" v-html="$page.post.content" />
+      <div class="post__content" v-html="$page.post.content" />
     </div>
   </Layout>
 </template>

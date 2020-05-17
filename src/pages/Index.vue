@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="hero home_hero py-10 mb-10 bg-subtle">
+    <div class="hero home_hero py-20 mb-10 bg-subtle">
       <div class="container grid grid-cols-12 gap-5">
         <div class="col-span-4">
           <g-image src="/joel.png"/>
