@@ -1,20 +1,14 @@
 <template>
-    <header class="sticky w-full top-0 p-5 xl:p-10 grid grid-cols-12 gap-5">
-        <nav class="col-span-6">
-            <ul class="flex flex-row justify-start content-center items-center text-xl">
-                <li class="pr-20">
-                    <g-link to="/">
-                        <Logo />
-                    </g-link>
-                </li>
-                <li class="pr-5">
-                    <g-link to="/" class="text-primary hover:text-accent transition-all ease-in-out duration-150">Home</g-link>
-                </li>
-                <li class="pr-5">
-                    <g-link to="/posts/" class="text-primary hover:text-accent transition-all ease-in-out duration-150">Posts</g-link>
-                </li>
-            </ul>
-        </nav>
+    <header class="sticky w-full top-0 p-2 bg-white">
+        <div class="container grid grid-cols-12 gap-5">
+            <g-link to="/" class="col-span-6 text-left">
+                <Logo />
+            </g-link>
+            <nav class="col-span-6 flex flex-row items-center justify-end">
+                <g-link to="/" class="text-primary hover:text-accent transition-all ease-in-out duration-150 pr-5">Home</g-link>
+                <g-link to="/posts/" class="text-primary hover:text-accent transition-all ease-in-out duration-150 pr-5">Posts</g-link>
+            </nav>
+        </div>
     </header>
 </template>
 

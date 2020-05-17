@@ -21,17 +21,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#fff',
-        accent: '#999',
-        bg: '#000',
+        primary: '#000',
+        accent: '#27ae60',
+        bg: '#fff',
         selection: '#000',
-        subtle: '#000'
+        subtle: '#f8f8f8'
       },
       backgroundColor: {
-        subtle: '#000'
+        subtle: '#f8f8f8',
+        white:'#fff'
       },
       textColor: {
-        grey: '#999'
+        grey: '#999',
+        white: '#fff'
       }
     }
   },
