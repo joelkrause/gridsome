@@ -8,7 +8,7 @@
         <div class="col-span-7 col-start-6 flex items-center">
           <div class="content">
             <p>Hey, I'm Joel 👋</p>
-            <p>I'm a web developer at Raak Creative where I build lightning ⚡️ fast headless websites with nuxt.js, storyblok &amp; shopify.</p>
+            <p>I'm a web developer at Raak Creative where I build lightning ⚡️ fast headless websites with vue.js</p>
             <p>I write about building the modern web on the JAMstack.</p>
           </div>
         </div>
