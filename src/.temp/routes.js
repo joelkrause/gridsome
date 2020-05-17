@@ -1,5 +1,9 @@
 export default [
   {
+    path: "/posts/:slug/",
+    component: () => import(/* webpackChunkName: "page--src--templates--post-vue" */ "/Users/joelkrause/Documents/GitHub/gridsome/src/templates/Post.vue")
+  },
+  {
     path: "/posts/",
     component: () => import(/* webpackChunkName: "page--src--pages--posts-vue" */ "/Users/joelkrause/Documents/GitHub/gridsome/src/pages/posts.vue")
   },

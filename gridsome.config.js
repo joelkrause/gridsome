@@ -6,9 +6,16 @@
 
 module.exports = {
   siteName: 'Joel Krause',
-  plugins: [
+  plugins: [{
+      use: 'gridsome-plugin-tailwindcss'
+    },
     {
-      use: 'gridsome-plugin-tailwindcss',
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './posts/**/*.md',
+        typeName: 'Post',
+        route: '/posts/:slug'
+      }
     }
   ]
 }
