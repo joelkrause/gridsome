@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="post_hero bg-subtle py-20 mb-10">
+    <div class="post_hero pt-15 pb-20 mb-10">
       <div class="container">
         <p>{{$page.post.date}}</p>
         <h1>{{ $page.post.title }}</h1>

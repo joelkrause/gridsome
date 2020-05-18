@@ -9,8 +9,8 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     fontFamily: {
-      display: 'DM Sans',
-      body: 'DM Sans',
+      display: 'proxima-nova',
+      body: 'proxima-nova',
     },
     container: false,
     screens: {
@@ -21,19 +21,22 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#000',
-        accent: '#27ae60',
-        bg: '#fff',
+        primary: '#fff',
+        accent: 'blue',
+        bg: '#111',
         selection: '#000',
         subtle: '#f8f8f8'
       },
       backgroundColor: {
-        subtle: '#f8f8f8',
-        white:'#fff'
+        subtle: '#222',
+        white: '#fff'
       },
       textColor: {
         grey: '#999',
         white: '#fff'
+      },
+      borderColor: {
+        grey: '#222'
       }
     }
   },
@@ -45,18 +48,19 @@ module.exports = {
     }) {
       addBase({
         '::selection': {
-          backgroundColor: config('theme.colors.selection')
+          backgroundColor: config('theme.colors.selection'),
+          color: '#fff'
         },
         'body': {
           backgroundColor: config('theme.colors.bg'),
           color: config('theme.colors.primary'),
           fontFamily: config('theme.fontFamily.body'),
-          fontWeight: '400',
-          fontSize: '1.0125rem'
+          fontWeight: '300',
+          fontSize: '1.125rem'
         },
         'p': {
           marginBottom: '1rem',
-          fontSize: '1.0125rem'
+          fontSize: '1.125rem'
         },
         'h1': {
           fontSize: config('theme.fontSize.h1'),
@@ -65,9 +69,6 @@ module.exports = {
           fontSize: '1.5rem',
           '@screen md': {
             fontSize: '3rem'
-          },
-          '@screen lg': {
-            fontSize: '4rem'
           }
         },
         'h2': {
