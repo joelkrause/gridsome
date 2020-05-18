@@ -9,8 +9,8 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     fontFamily: {
-      display: 'sans-serif',
-      body: 'sans-serif',
+      display: 'DM Sans',
+      body: 'DM Sans',
     },
     container: false,
     screens: {
@@ -52,11 +52,11 @@ module.exports = {
           color: config('theme.colors.primary'),
           fontFamily: config('theme.fontFamily.body'),
           fontWeight: '400',
-          fontSize: '1rem'
+          fontSize: '1.0125rem'
         },
         'p': {
-          marginBottom: '0.875rem',
-          fontSize: '1rem'
+          marginBottom: '1rem',
+          fontSize: '1.0125rem'
         },
         'h1': {
           fontSize: config('theme.fontSize.h1'),
