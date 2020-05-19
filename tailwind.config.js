@@ -9,8 +9,8 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     fontFamily: {
-      display: 'proxima-nova',
-      body: 'proxima-nova',
+      display: 'neue-haas-grotesk-display',
+      body: 'neue-haas-grotesk-text',
     },
     container: false,
     screens: {
@@ -21,9 +21,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#fff',
+        primary: '#111',
         accent: 'blue',
-        bg: '#111',
+        bg: '#f8f8f8',
         selection: '#000',
         subtle: '#f8f8f8'
       },
@@ -36,7 +36,7 @@ module.exports = {
         white: '#fff'
       },
       borderColor: {
-        grey: '#222'
+        grey: '#ececec'
       }
     }
   },
@@ -60,7 +60,6 @@ module.exports = {
         },
         'p': {
           marginBottom: '1rem',
-          fontSize: '1.125rem'
         },
         'h1': {
           fontSize: config('theme.fontSize.h1'),
@@ -73,7 +72,7 @@ module.exports = {
         },
         'h2': {
           fontSize: config('theme.fontSize.h2'),
-          fontFamily: config('theme.fontFamily.body'),
+          fontFamily: config('theme.fontFamily.display'),
           fontWeight: '700',
           fontSize: '1.25rem',
           '@screen md': {
@@ -85,7 +84,7 @@ module.exports = {
         },
         'h3': {
           fontSize: config('theme.fontSize.h3'),
-          fontFamily: config('theme.fontFamily.body'),
+          fontFamily: config('theme.fontFamily.display'),
           fontWeight: '700',
           fontSize: '1.5rem',
           '@screen md': {
@@ -97,7 +96,7 @@ module.exports = {
         },
         'h4': {
           fontSize: config('theme.fontSize.h4'),
-          fontFamily: config('theme.fontFamily.body'),
+          fontFamily: config('theme.fontFamily.display'),
           fontWeight: '700',
           fontSize: '1.25rem',
           '@screen md': {
@@ -109,7 +108,7 @@ module.exports = {
         },
         'h5': {
           fontSize: config('theme.fontSize.h5'),
-          fontFamily: config('theme.fontFamily.body'),
+          fontFamily: config('theme.fontFamily.display'),
           fontWeight: '700',
           fontSize: '1rem',
           '@screen md': {
@@ -121,7 +120,7 @@ module.exports = {
         },
         'h6': {
           fontSize: config('theme.fontSize.h6'),
-          fontFamily: config('theme.fontFamily.body'),
+          fontFamily: config('theme.fontFamily.display'),
           fontWeight: '700',
           fontSize: '0.875rem',
           '@screen md': {

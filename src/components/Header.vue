@@ -1,5 +1,5 @@
 <template>
-    <header class="sticky w-full top-0 p-2 xl:p-10">
+    <header class="sticky w-full top-0 p-2 xl:p-5">
         <div class="grid grid-cols-12 gap-5">
             <g-link to="/" class="col-span-6 text-left">
                 <Logo />
