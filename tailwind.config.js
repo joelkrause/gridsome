@@ -9,8 +9,8 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     fontFamily: {
-      display: 'neue-haas-grotesk-display',
-      body: 'neue-haas-grotesk-text',
+      body: ' niveau-grotesk',
+      display: 'roc-grotesk',
     },
     container: false,
     screens: {
@@ -23,7 +23,7 @@ module.exports = {
       colors: {
         primary: '#111',
         accent: 'blue',
-        bg: '#f8f8f8',
+        bg: '#fff',
         selection: '#000',
         subtle: '#f8f8f8'
       },
@@ -55,7 +55,7 @@ module.exports = {
           backgroundColor: config('theme.colors.bg'),
           color: config('theme.colors.primary'),
           fontFamily: config('theme.fontFamily.body'),
-          fontWeight: '300',
+          fontWeight: '400',
           fontSize: '1.125rem'
         },
         'p': {
@@ -64,7 +64,7 @@ module.exports = {
         'h1': {
           fontSize: config('theme.fontSize.h1'),
           fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '700',
+          fontWeight: '600',
           fontSize: '1.5rem',
           '@screen md': {
             fontSize: '3rem'
@@ -73,7 +73,7 @@ module.exports = {
         'h2': {
           fontSize: config('theme.fontSize.h2'),
           fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '700',
+          fontWeight: '600',
           fontSize: '1.25rem',
           '@screen md': {
             fontSize: '2rem'
@@ -85,7 +85,7 @@ module.exports = {
         'h3': {
           fontSize: config('theme.fontSize.h3'),
           fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '700',
+          fontWeight: '600',
           fontSize: '1.5rem',
           '@screen md': {
             fontSize: '1.75rem'
@@ -97,7 +97,7 @@ module.exports = {
         'h4': {
           fontSize: config('theme.fontSize.h4'),
           fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '700',
+          fontWeight: '600',
           fontSize: '1.25rem',
           '@screen md': {
             fontSize: '1.5rem'
@@ -109,7 +109,7 @@ module.exports = {
         'h5': {
           fontSize: config('theme.fontSize.h5'),
           fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '700',
+          fontWeight: '600',
           fontSize: '1rem',
           '@screen md': {
             fontSize: '1.25rem'
@@ -121,7 +121,7 @@ module.exports = {
         'h6': {
           fontSize: config('theme.fontSize.h6'),
           fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '700',
+          fontWeight: '600',
           fontSize: '0.875rem',
           '@screen md': {
             fontSize: '0.975rem'

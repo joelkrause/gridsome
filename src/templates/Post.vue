@@ -2,11 +2,12 @@
   <Layout>
     <div class="post_hero py-20 mb-10">
       <div class="container">
-        <div class="post_meta pb-10 flex flex-wrap items-center">
-            <div class="tag capitalize" v-for="(value,index) in $page.post.tags" :key="index">{{value}}<span class="px-2">&bull;</span></div>
-            <div>Publised on {{$page.post.date}}</div>
-        </div>
         <h1>{{ $page.post.title }}</h1>
+        <div class="post_meta pt-10 flex flex-wrap items-center text-sm text-grey">
+            <div class="tag capitalize" v-for="(value,index) in $page.post.tags" :key="index">{{value}}<span class="px-2">&bull;</span></div>
+            <div>Publised on {{$page.post.date}} <span class="px-2">&bull;</span></div>
+            <div>{{$page.post.timeToRead}} minute read</div>
+        </div>
         <div class="excerpt pt-10 pb-5 max-w-xl text-grey" v-html="$page.post.description"></div>
       </div>
     </div>
@@ -25,6 +26,7 @@ query Post ($id: ID!) {
     content
     date (format: "DD MMMM YYYY")
     tags
+    timeToRead
   }
 }
 </page-query>
