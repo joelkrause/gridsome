@@ -10,6 +10,6 @@ export default function (Vue, { router, head, isClient }) {
   
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://use.typekit.net/nwp1vst.css'
+    href: 'https://fonts.googleapis.com/css2?family=DM+Mono&family=Inter:wght@400;700&display=swap'
   })
 }

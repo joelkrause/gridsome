@@ -9,8 +9,8 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     fontFamily: {
-      body: ' niveau-grotesk',
-      display: 'roc-grotesk',
+      body: 'Inter',
+      display: 'DM Mono',
     },
     container: false,
     screens: {
@@ -20,14 +20,21 @@ module.exports = {
       'xl': '1280px'
     },
     extend: {
+      fontFamily: {
+        accent: 'DM Mono'
+      },
+      inset:{
+        'header':'50px'
+      },
       colors: {
-        primary: '#111',
+        primary: '#fff',
         accent: 'blue',
-        bg: '#fff',
+        bg: '#111',
         selection: '#000',
         subtle: '#f8f8f8'
       },
       backgroundColor: {
+        dark:'#111',
         subtle: '#222',
         white: '#fff'
       },
@@ -36,7 +43,7 @@ module.exports = {
         white: '#fff'
       },
       borderColor: {
-        grey: '#ececec'
+        grey: '#333'
       }
     }
   },
@@ -56,24 +63,23 @@ module.exports = {
           color: config('theme.colors.primary'),
           fontFamily: config('theme.fontFamily.body'),
           fontWeight: '400',
-          fontSize: '1.125rem'
+          fontSize: '1rem'
         },
         'p': {
-          marginBottom: '1rem',
+          marginBottom: '1.5rem',
+          lineHeight:'1.75'
         },
         'h1': {
           fontSize: config('theme.fontSize.h1'),
-          fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '600',
+          fontWeight:'700',
           fontSize: '1.5rem',
           '@screen md': {
-            fontSize: '3rem'
+            fontSize: '2rem'
           }
         },
         'h2': {
           fontSize: config('theme.fontSize.h2'),
-          fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '600',
+          fontWeight:'700',
           fontSize: '1.25rem',
           '@screen md': {
             fontSize: '2rem'
@@ -84,8 +90,7 @@ module.exports = {
         },
         'h3': {
           fontSize: config('theme.fontSize.h3'),
-          fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '600',
+          fontWeight:'700',
           fontSize: '1.5rem',
           '@screen md': {
             fontSize: '1.75rem'
@@ -96,8 +101,7 @@ module.exports = {
         },
         'h4': {
           fontSize: config('theme.fontSize.h4'),
-          fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '600',
+          fontWeight:'700',
           fontSize: '1.25rem',
           '@screen md': {
             fontSize: '1.5rem'
@@ -108,8 +112,7 @@ module.exports = {
         },
         'h5': {
           fontSize: config('theme.fontSize.h5'),
-          fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '600',
+          fontWeight:'700',
           fontSize: '1rem',
           '@screen md': {
             fontSize: '1.25rem'
@@ -120,8 +123,7 @@ module.exports = {
         },
         'h6': {
           fontSize: config('theme.fontSize.h6'),
-          fontFamily: config('theme.fontFamily.display'),
-          fontWeight: '600',
+          fontWeight:'700',
           fontSize: '0.875rem',
           '@screen md': {
             fontSize: '0.975rem'
@@ -143,7 +145,7 @@ module.exports = {
           paddingLeft: '1rem',
           paddingRight: '1rem',
           '@screen sm': {
-            maxWidth: '600px',
+            maxWidth: '400px',
           },
           '@screen md': {
             maxWidth: '400px',
@@ -153,6 +155,25 @@ module.exports = {
           },
           '@screen xl': {
             maxWidth: '55vw',
+          },
+        },
+        '.container-wide': {
+          maxWidth: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          paddingLeft: '1rem',
+          paddingRight: '1rem',
+          '@screen sm': {
+            maxWidth: '400px',
+          },
+          '@screen md': {
+            maxWidth: '400px',
+          },
+          '@screen lg': {
+            maxWidth: '400px',
+          },
+          '@screen xl': {
+            maxWidth: '70vw',
           },
         }
       })

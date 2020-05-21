@@ -1,20 +1,22 @@
 <template>
   <Layout>
-    <div class="post_hero py-20 mb-10">
-      <div class="container">
-        <h1>{{ $page.post.title }}</h1>
-        <div class="post_meta pt-10 flex flex-wrap items-center text-sm text-grey">
-            <div class="tag capitalize" v-for="(value,index) in $page.post.tags" :key="index">{{value}}<span class="px-2">&bull;</span></div>
-            <div>Publised on {{$page.post.date}} <span class="px-2">&bull;</span></div>
-            <div>{{$page.post.timeToRead}} minute read</div>
+    <main class="container-wide py-16 grid grid-cols-12">
+      <aside class="col-span-3">
+        <div class="sticky top-header post_meta pt-10 flex flex-wrap text-sm text-grey font-accent">
+            <div class="w-full text-white">Published</div>
+            <div class="w-full">{{$page.post.date}}</div>
+            <div class="w-full text-white pt-4">Read Time</div>
+            <div class="w-full">{{$page.post.timeToRead}} minute read</div>
+            <div class="w-full text-white pt-4">Tags</div>
+            <div class="tag capitalize" v-for="(value,index) in $page.post.tags" :key="index">{{value}}<span class="px-2" v-if="index != $page.post.tags.length - 1">&bull;</span></div>
         </div>
-        <div class="excerpt pt-10 pb-5 max-w-xl text-grey" v-html="$page.post.description"></div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="post__content" v-html="$page.post.content" />
-    </div>
-    <PostNav />
+      </aside>
+      <section class="col-span-9">
+          <h1>{{ $page.post.title }}</h1>
+          <div class="post__content" v-html="$page.post.content" />
+          <PostNav />
+      </section>
+    </main>
   </Layout>
 </template>
 

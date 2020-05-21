@@ -1,8 +1,8 @@
 <template>
-    <header class="sticky w-full top-0 p-2 xl:p-5">
+    <header class="sticky w-full top-0 p-2 xl:p-5 border-b border-grey bg-dark">
         <div class="grid grid-cols-12 gap-5">
-            <g-link to="/" class="col-span-6 text-left">
-                <Logo />
+            <g-link to="/" class="col-span-6 text-left font-bold">
+                Joel Krause
             </g-link>
             <nav class="col-span-6 flex flex-row items-center justify-end">
                 <g-link to="/" class="text-primary hover:text-accent transition-all ease-in-out duration-150 pr-5">Home</g-link>

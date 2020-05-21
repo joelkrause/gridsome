@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <div class="container">
-      <h3>Posts</h3>
+    <div class="container pt-10">
+      <h5>Posts</h5>
       <Post v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
@@ -31,3 +31,4 @@ query {
     }
   }
 }
+</page-query>

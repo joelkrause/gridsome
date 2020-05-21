@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="container">
-      <h3>Latest Posts</h3>
+      <h5>Latest Posts</h5>
       <Post v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
