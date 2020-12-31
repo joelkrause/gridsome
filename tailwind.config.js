@@ -24,7 +24,7 @@ module.exports = {
         accent: 'DM Mono'
       },
       inset:{
-        'header':'50px'
+        'header':'150px'
       },
       colors: {
         primary: '#fff',

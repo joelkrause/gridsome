@@ -1,5 +1,5 @@
 <template>
-    <header class="sticky w-full top-0 p-2 xl:p-5 border-b border-grey bg-dark">
+    <header class="sticky w-full top-0 p-4 xl:p-16 bg-dark">
         <div class="grid grid-cols-12 gap-5">
             <g-link to="/" class="col-span-6 text-left font-bold">
                 Joel Krause
